@@ -53,7 +53,7 @@ public static void new_path()
 	    if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) { 
              if(chooser.getSelectedFile().canWrite() && chooser.getSelectedFile().canRead())
              {
-            	path= chooser.getSelectedFile().getName();
+            	path= chooser.getSelectedFile().getPath();
              }else{new_path();}
 	      }
 	    else {
