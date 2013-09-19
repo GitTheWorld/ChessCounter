@@ -189,7 +189,7 @@ public static void writeFile()
 		
 		 java.util.Date date= new java.util.Date();
 		 try{
-	        PrintWriter pWriter = new PrintWriter(new FileWriter(System.getProperty("user.dir")+"/ChessCounter-"+String.valueOf(new Timestamp(date.getTime()).getTime())+".save"));
+	        PrintWriter pWriter = new PrintWriter(new FileWriter(path+"/ChessCounter-"+String.valueOf(new Timestamp(date.getTime()).getTime())+".save"));
 	                
 	        pWriter.println(title+"|"+left_string+"|"+right_string+"|"+left+"|"+right+"|"+left_half+"|"+right_half);
 	        pWriter.flush();
